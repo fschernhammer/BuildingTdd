@@ -13,4 +13,10 @@ public class BuildingUT {
         Building building2 = new Building(0,"Franz");
         Assert.assertEquals(building.numberOfResidents(), 1);
     }
+    @Test
+    public void after_adding_resident_must_remove(){
+        Building building = new Building(0,"Manfred");
+        building.removeResident("Manfred");
+        Assert.assertEquals(building.numberOfResidents(), 0);
+    }
 }
