@@ -7,4 +7,10 @@ public class BuildingUT {
         Building building = new Building(0,"Manfred");
         Assert.assertEquals(building.numberOfResidents(), 1);
     }
+    @Test
+    public void numberofResidents_should_be2_adding_two_resident(){
+        Building building = new Building(0,"Manfred");
+        Building building2 = new Building(0,"Franz");
+        Assert.assertEquals(building.numberOfResidents(), 1);
+    }
 }
