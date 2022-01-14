@@ -25,4 +25,11 @@ public class BuildingUT {
         Building building = new Building(0,residents);
         Assert.assertEquals(building.numberOfResidents(), 3);
     }
+    @Test
+    public void add_resident_should_work(){
+        String[] residents = {"Manfred", "Franz", "Fritz"};
+        Building building = new Building(0,residents);
+        building.addResident("Jakob");
+        Assert.assertEquals(building.numberOfResidents(), 4);
+    }
 }
