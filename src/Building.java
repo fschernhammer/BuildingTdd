@@ -20,6 +20,8 @@ public class Building {
         return mResidents.size();
     }
     public void removeResident(String resident){
-
+        if (mResidents.contains(resident)){
+            mResidents.remove(resident);
+        }
     }
 }
