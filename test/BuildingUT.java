@@ -19,4 +19,10 @@ public class BuildingUT {
         building.removeResident("Manfred");
         Assert.assertEquals(building.numberOfResidents(), 0);
     }
+    @Test
+    public void add_stringarray_of_residents(){
+        String[] residents = {"Manfred", "Franz", "Fritz"};
+        Building building = new Building(0,residents);
+        Assert.assertEquals(building.numberOfResidents(), 3);
+    }
 }
