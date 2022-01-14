@@ -21,9 +21,9 @@ public class Building {
         }
     }
     public void addResident(String resident){
-        if(!mResidents.contains(resident)){
+        //if(!mResidents.contains(resident)){
             mResidents.add(resident);
-        }
+        //}
     }
     public int numberOfResidents(){
         return mResidents.size();

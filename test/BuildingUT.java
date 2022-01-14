@@ -32,4 +32,11 @@ public class BuildingUT {
         building.addResident("Jakob");
         Assert.assertEquals(building.numberOfResidents(), 4);
     }
+    @Test
+    public void add_duplicate_resident_should_not_work(){
+        String[] residents = {"Manfred", "Franz", "Fritz"};
+        Building building = new Building(0,residents);
+        building.addResident("Fritz");
+        Assert.assertEquals(building.numberOfResidents(), 3);
+    }
 }
