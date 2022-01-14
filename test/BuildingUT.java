@@ -39,4 +39,10 @@ public class BuildingUT {
         building.addResident("Fritz");
         Assert.assertEquals(building.numberOfResidents(), 3);
     }
+    @Test
+    public void add_duplicate_string_in_array(){
+        String[] residents = {"Franz", "Franz", "Fritz"};
+        Building building = new Building(0,residents);
+        Assert.assertEquals(building.numberOfResidents(), 2);
+    }
 }

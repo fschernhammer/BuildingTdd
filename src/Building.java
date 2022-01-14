@@ -9,9 +9,9 @@ public class Building {
     public Building(int id, String[] resident){
         mId = id;
         for (int i = 0; i < resident.length; i++){
-            if (!mResidents.contains(resident[i])){
+            //if (!mResidents.contains(resident[i])){
                 mResidents.add(resident[i]);
-            }
+            //}
         }
     }
     public Building(int id, String resident){
@@ -29,8 +29,6 @@ public class Building {
         return mResidents.size();
     }
     public void removeResident(String resident){
-        if (mResidents.contains(resident)){
-            mResidents.remove(resident);
-        }
+        mResidents.remove(resident);
     }
 }
