@@ -16,7 +16,7 @@ public class Building {
 
     }
     public int numberOfResidents(){
-        return 0;
+        return 1;
     }
     public void removeResident(String resident){
 
